@@ -1,0 +1,23 @@
+{
+  "name": "n",
+  "version": "1.0.0",
+  "description": "Web Server - ExpressJS",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rijal2/WebServer-ExpressJS-01.git"
+  },
+  "author": "Rijal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rijal2/WebServer-ExpressJS-01/issues"
+  },
+  "homepage": "https://github.com/rijal2/WebServer-ExpressJS-01#readme"
+}
