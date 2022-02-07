@@ -2,8 +2,20 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+
+//Setting halaman root
 app.get('/', (req, res) => {
   res.send('Hello World! Ini adalah halaman root')
+})
+
+//Setting halaman about
+app.get('/about', (req, res) => {
+  res.send('Hello World! Ini adalah halaman about')
+})
+
+//Setting halaman Contact
+app.get('/contact', (req, res) => {
+  res.send('Hello World! Ini adalah halaman contact')
 })
 
 app.listen(port, () => {

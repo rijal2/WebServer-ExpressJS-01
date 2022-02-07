@@ -19,3 +19,10 @@ MENGGUNAKAN VIEW ENGINE EXPRESSJS
 04. Install Nodemoon agar ketika terjadi perubahan sistem sudah otomatis me-refresh
 05. Setelah diinstall, Tambahkan "start": "nodemon app.js" pada object scripts yang ada di dalam file package.json.
 06. Jalankan nodemon pada terminal dengan perintah "npm run start"
+
+===================================================================================
+SETTING HALAMAN
+
+01. Setting halaman root. Yang dimaksud halaman root pada latihan ini adalah "http://localhost:3000/",
+02. Setting halaman (buat routing) untuk about dan contact
+
