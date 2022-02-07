@@ -17,3 +17,5 @@ MENGGUNAKAN VIEW ENGINE EXPRESSJS
     b. Salin ke app.js
 
 04. Install Nodemoon agar ketika terjadi perubahan sistem sudah otomatis me-refresh
+05. Setelah diinstall, Tambahkan "start": "nodemon app.js" pada object scripts yang ada di dalam file package.json.
+06. Jalankan nodemon pada terminal dengan perintah "npm run start"
