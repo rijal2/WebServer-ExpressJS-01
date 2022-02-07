@@ -1,3 +1,16 @@
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
+
+/*
 const http = require('http');//memanggil Core Module http yang ada di NodeJS
 const { debug } = require('util');
 const port = 3000;
@@ -34,3 +47,5 @@ http.createServer((req, res) => {
 }).listen(port, () => {
     console.log(`Server sedang berjalan pada port ${port}..`)//akan dicetak pada terminal
 })
+
+*/
