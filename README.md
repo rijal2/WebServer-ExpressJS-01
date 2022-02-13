@@ -24,5 +24,12 @@ MENGGUNAKAN VIEW ENGINE EXPRESSJS
 SETTING HALAMAN
 
 01. Setting halaman root. Yang dimaksud halaman root pada latihan ini adalah "http://localhost:3000/",
-02. Setting halaman (buat routing) untuk about dan contact
+02. Setting halaman (buat routing) untuk about dan contact.
+03. Menngunakan metode use(). Metode ini bisa di lihat di dokumentasinya:
+
+    https://expressjs.com/ ==> API reference ==> pilih versi yg sesuai dnegan yg diinstall (v4) ==> Appliction (di sidebar kiri) ==> pilih app.use()
+
+    metode app.use() memiliki 2 argumen, yaitu path dan callback finction.
+
+    
 
