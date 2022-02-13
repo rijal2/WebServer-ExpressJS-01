@@ -36,5 +36,14 @@ SETTING HALAMAN
 04. Menggunakan metode res.sendFile() untuk mengirim respon berupa file. Biasanya lebih sering yang dikirim berupa html
 
 =================================================================
-BELAJAR MENGELOLA URL
+BELAJAR MENGELOLA URL menggunakan salah metode yang ada di expressjs, yaitu req.params dan req.query
+
+Berapa URL ada yang seperti ini
+a. https://toko.com/produk/2/ctegory/sepatu
+b. https://toko.com/produk/2?ctegory=sepatu
+
+dari contoh URL di atas kita kan belajar mengambil informasi yang dikirimkan melalu request URL.
+dari kedia URL diatas terdapat 2 informasi yang bisa kita ambil, yaitu produk dengan ID = 2, dan kategori = sepatu. Produk dan ctegory merupakan variabel pasti, sedangkan 2 dan sepatu merupakan nilai dari variabel tersebut. nilai 2 dan sepatu bisa berubah-ubah sedangkan variabel produk dan kategory tidak bisa berubah. Oleh karena itu penulisan path nya:
+
+'./produk/:id/ctegory/:kategori'
 
