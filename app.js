@@ -5,17 +5,27 @@ const port = 3000
 
 //Setting halaman root
 app.get('/', (req, res) => {
-  res.send('Hello World! Ini adalah halaman root')
+//   res.send('Hello World! Ini adalah halaman root')
+    res.sendFile('./index.html', {root: __dirname})
 })
 
 //Setting halaman about
 app.get('/about', (req, res) => {
-  res.send('Hello World! Ini adalah halaman about')
+//   res.send('Hello World! Ini adalah halaman about')
+    res.sendFile('./about.html', {root: __dirname})
 })
 
 //Setting halaman Contact
 app.get('/contact', (req, res) => {
-  res.send('Hello World! Ini adalah halaman contact')
+//   res.send('Hello World! Ini adalah halaman contact')
+res.sendFile('./contact.html', {root: __dirname})
+})
+
+//Metode use(), menangkap apupun yang direquest kemudian mengeksekusi function yang ada di dalamnya. Oleh karena itu jangan letakkan metode ini di paling atas agar requestnya tidak selalu ditangkap oleh metode use() ini. Pada umumnya metode ini nerfungsi untuk menghandle request halaman yang tidak ada.
+
+app.use('/', (req, res) => {
+    res.status(404) //res.status(404) akan mengirimkan status pada webbrowser 404 (Page Not Found). Apabila metode ini tidak dikirimkan maka web akan mengirimkan status yang lain.
+    res.send(`<h1>404</>`)
 })
 
 app.listen(port, () => {

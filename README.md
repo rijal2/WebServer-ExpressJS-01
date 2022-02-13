@@ -29,7 +29,12 @@ SETTING HALAMAN
 
     https://expressjs.com/ ==> API reference ==> pilih versi yg sesuai dnegan yg diinstall (v4) ==> Appliction (di sidebar kiri) ==> pilih app.use()
 
-    metode app.use() memiliki 2 argumen, yaitu path dan callback finction.
+    metode app.use() memiliki 2 argumen, yaitu path dan callback function.
 
-    
+    Metode ini biasanya digunakan untuk mengatasai request/halaman yang tidak ada.
+
+04. Menggunakan metode res.sendFile() untuk mengirim respon berupa file. Biasanya lebih sering yang dikirim berupa html
+
+=================================================================
+BELAJAR MENGELOLA URL
 
